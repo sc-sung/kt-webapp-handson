@@ -14,3 +14,5 @@
 4. 설치 완료 후, 터미널이나 명령 프롬프트에서 "dotnet --version" 명령어로 설치 상태를 확인합니다.
 
 ###
+
+https://github.com/lunelake/kt-webapp-handson
