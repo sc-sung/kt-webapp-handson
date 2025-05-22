@@ -62,34 +62,27 @@
 
 2. 앱을 중지하려면 터미널 창에서 Ctrl-C를 눌러 실행 중인 프로세스를 종료합니다.
 
-### 정적 웹앱 만들기
+
 
 이제 GitHub 리포지토리를 만들었으므로 Azure Portal에서 Static Web Apps 인스턴스를 만들 수 있습니다.
 
-### Azure 샌드박스 활성화
-- 페이지 상단의 샌드박스 활성화 여부를 확인합니다.
-- 샌드박스를 사용하면 비용 없이 Azure 서비스를 이용할 수 있습니다.
+### 작업 4 : "Azure Static Web Apps" 확장 설치
 
-### Visual Studio Code 준비
+![alt text](image.png)
+
 1. Visual Studio Marketplace에서 "Azure Static Web Apps" 확장을 설치합니다.
 2. 설치가 완료되면 업데이트를 위해 Visual Studio Code를 재시작합니다.
-
-### Visual Studio Code에서 Azure 로그인
-1. 보기 > 명령 팔레트를 열고 "Azure: 로그인"을 선택합니다.
-2. 브라우저에 표시된 코드를 복사해 붙여넣어 인증을 완료합니다.
-    - 샌드박스 계정과 동일한 계정을 사용해야 합니다.
-
-### 구독 선택 및 리포지토리 열기
-1. Visual Studio Code에서 파일 > 열기를 선택하여 복제한 리포지토리를 엽니다.
-2. 명령 팔레트를 열고 "Azure: Select Subscriptions"를 입력합니다.
-3. 컨시어지 구독을 선택하여 Azure 구독을 필터링합니다.
 
 ### 정적 웹앱 생성
 1. Visual Studio Code의 활동 표시줄에서 Azure 아이콘을 클릭합니다.
 2. Static Web Apps 영역에서 마우스 오른쪽 버튼을 클릭하고 "정적 웹앱 만들기"를 선택합니다.
+
+![alt text](image-1.png)
+
 3. 다음 정보를 차례로 입력합니다:
-    - 웹앱 이름: my-first-static-web-app
-    - 위치: 원하는 리전을 선택
+    - 웹앱 이름: staticwebapp[이름]
+    - 위치: East Asia 선택
+    - 기본 프로젝트 구조 : 리액트
     - 프론트엔드 코드 위치: /react-app
     - 빌드 출력 위치: build
     - React 옵션 선택
