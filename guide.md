@@ -26,3 +26,12 @@ https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure
 brew update
 brew install azure-cli
 ```
+
+
+### Azure Function Core Tool 설치
+https://github.com/Azure/azure-functions-core-tools/releases
+
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
