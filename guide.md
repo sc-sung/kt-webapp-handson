@@ -1,4 +1,5 @@
 https://github.com/lunelake/kt-webapp-handson
+https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget
 
 ## 선행 설치
 
