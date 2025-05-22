@@ -1,3 +1,5 @@
+https://github.com/lunelake/kt-webapp-handson
+
 ## 선행 설치
 
 ### Visual Studio Code 설치
@@ -13,6 +15,5 @@
 3. 다운로드한 파일을 실행하여 설치를 진행합니다.
 4. 설치 완료 후, 터미널이나 명령 프롬프트에서 "dotnet --version" 명령어로 설치 상태를 확인합니다.
 
-###
+맥 설치 가이드 : https://dev.to/rusydy/setting-up-net-on-macos-a-step-by-step-guide-14db
 
-https://github.com/lunelake/kt-webapp-handson
