@@ -1,5 +1,6 @@
 https://github.com/lunelake/kt-webapp-handson
-https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget
+
+
 
 ## 선행 설치
 
@@ -17,4 +18,10 @@ https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure
 4. 설치 완료 후, 터미널이나 명령 프롬프트에서 "dotnet --version" 명령어로 설치 상태를 확인합니다.
 
 맥 설치 가이드 : https://dev.to/rusydy/setting-up-net-on-macos-a-step-by-step-guide-14db
+
+### Azure CLI 설치
+https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget
+
+brew update
+brew install azure-cli
 
