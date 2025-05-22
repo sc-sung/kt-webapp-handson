@@ -60,7 +60,7 @@ Azure 포털의 "리소스, 서비스, 문서 검색" 텍스트 상자를 사용
     - **Primary service**: 변경 없음  
     - **성능**: Standard 선택  
     - **중복성**: Locally-redundant storage (LRS) 선택
-    ![alt text](images/image-1.png)
+    ![alt text](./images/image-1.png)
 
    아래 스크린샷은 스토리지 계정 생성 시 설정 내용을 보여줍니다.
 
@@ -72,7 +72,7 @@ Azure 포털의 "리소스, 서비스, 문서 검색" 텍스트 상자를 사용
 5. **개요** 블레이드에서 **리소스로 이동** 버튼을 선택하여 새로 생성된 스토리지 계정 블레이드로 이동합니다.
 6. 스토리지 계정 블레이드의 **보안 + 네트워킹** 섹션에서 **Access keys**를 선택합니다.
 7. **Access keys** 블레이드에서 **키 표시** 버튼을 선택합니다.
-![alt text](images/image-2.png)
+![alt text](./images/image-2.png)
 8. 표시된 연결 문자열 중 아무 값을 확인한 후 Notepad에 복사하여 기록합니다.  
    참고: 두 문자열은 상호 교환 가능합니다.
 
@@ -90,7 +90,7 @@ Azure 포털의 "리소스, 서비스, 문서 검색" 텍스트 상자를 사용
     - **버전**: 8 (LTS), isolated worker model 선택  
     - **지역**: (Asia Pacific) Korea Central 선택  
     - **운영 체제**: Linux 선택
-    ![alt text](images/image-3.png)
+    ![alt text](./images/image-3.png)
    아래 스크린샷은 함수 앱 생성 시 설정 내용을 보여줍니다.
 
 7. **스토리지** 탭에서 다음 작업을 수행한 후 **검토 + 만들기** 버튼을 선택합니다:  

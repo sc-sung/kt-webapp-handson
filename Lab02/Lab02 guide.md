@@ -39,7 +39,7 @@
 ### Task 2: Web/Index.cshtml 파일의 이미지 헤더 업데이트
 
 1. VS Code로 Lab2/Start/Web 폴더를 엽니다.  
-2. Web/Index.cshtml 파일(또는 Pages/Index.cshtml 위치)에 접근하여 파일 내 "Images"라는 텍스트를 "Images - Update Version 1"로 변경 후 저장합니다.  
+2. Web/Index.cshtml 파일(또는 Pages/Index.cshtml 위치)에 접근하여 파일 내 "./images"라는 텍스트를 "./images - Update Version 1"로 변경 후 저장합니다.  
 3. 터미널에서 프로젝트를 빌드 및 게시합니다:
     ```pwsh
     dotnet publish -c Release -o publish
@@ -68,7 +68,7 @@
 
 1. 두 웹 앱 중 아무 사이트에서 Contoso Photo Gallery 웹페이지의 “새 이미지 업로드” 섹션에서 다음 작업을 수행합니다:
     a. **Browse** 버튼을 선택합니다.  
-    b. 파일 탐색기에서 Allfiles (랩경로루트)\Labs02\Starter\Images 폴더로 이동하여 **burger.jpg** 파일을 선택하고 **열기**를 클릭합니다.  
+    b. 파일 탐색기에서 Allfiles (랩경로루트)\Labs02\Starter\./images 폴더로 이동하여 **burger.jpg** 파일을 선택하고 **열기**를 클릭합니다.  
     c. **Upload** 버튼을 선택합니다.
 2. 갤러리 이미지 목록이 새 이미지로 업데이트되었는지 확인합니다. (필요에 따라 브라우저를 새로 고침할 수 있습니다.)
 3. 다른 스테이지의 사이트에서도 똑같이 업데이트 되었는 지 확인합니다.
@@ -99,17 +99,25 @@
 1. 스토리지 계정 블레이드 내 "데이터 저장소" 섹션에서 "컨테이너" 링크를 선택합니다.
 2. 컨테이너 블레이드에서 "+ 컨테이너"를 선택합니다.
 3. 새 컨테이너 창에서:
-    - "이름" 텍스트 상자에 "images"를 입력합니다.
+    - "이름" 텍스트 상자에 "./images"를 입력합니다.
     - "만들기"를 선택합니다.
-4. 생성된 "images" 컨테이너로 이동합니다.
-5. "images" 블레이드에서 "업로드"를 선택합니다.
+4. 생성된 "./images" 컨테이너로 이동합니다.
+5. "./images" 블레이드에서 "업로드"를 선택합니다.
 6. Blob 업로드 창에서:
     - 파일 섹션에서 "파일 찾아보기"를 선택하거나 드래그 앤 드롭 기능을 사용합니다.
-    - 파일 탐색기 창에서 (랩경로루트)\Labs02\Starter\Images로 이동하여 "sub.jpg" 파일을 선택한 후 "열기"를 선택합니다.
+    - 파일 탐색기 창에서 (랩경로루트)\Labs02\Starter\./images로 이동하여 "sub.jpg" 파일을 선택한 후 "열기"를 선택합니다.
     - "파일이 이미 존재하는 경우 덮어쓰기" 체크 박스가 선택되어 있는지 확인합니다.
 7. "업로드"를 선택하고 Blob 업로드가 완료될 때까지 기다립니다.
 
-### Task 4: 웹 앱을 Staging에 배포
+### Task 4: 스테이징 슬롯 생성
+1. Azure 포털의 **리소스, 서비스 및 문서 검색**에서 imgapi[이름]을 검색해 선택합니다.
+1. **배포 슬롯** 메뉴를 선택합니다.
+2. **+ 추가** 버튼을 클릭하여 새 슬롯을 만듭니다.
+3. Clone settings from: imgapi[이름]을  설정합니다.
+4. 슬롯 이름에 `staging` 입력 후 **추가**를 클릭합니다.
+5. 생성된 `staging` 슬롯을 선택합니다.
+
+### Task 5: 웹 앱을 Staging에 배포
 
 1. VS Code로 Lab2/Start/API 폴더를 엽니다.
 3. 터미널에서 프로젝트를 빌드 및 게시합니다:
@@ -123,14 +131,6 @@
     ```pwsh
     az webapp deployment source config-zip --resource-group KT-AppServiceHandsOn --name <앱이름> --slot staging --src api.zip
     ```
-
-### Task 5: 스테이징 슬롯 생성
-1. Azure 포털의 **리소스, 서비스 및 문서 검색**에서 imgapi[이름]을 검색해 선택합니다.
-1. **배포 슬롯** 메뉴를 선택합니다.
-2. **+ 추가** 버튼을 클릭하여 새 슬롯을 만듭니다.
-3. Clone settings from: imgapi[이름]을  설정합니다.
-4. 슬롯 이름에 `staging` 입력 후 **추가**를 클릭합니다.
-5. 생성된 `staging` 슬롯을 선택합니다.
 
 ### Task 6: 스테이징 웹앱 구성
 
@@ -182,11 +182,11 @@
 1. App Service Plan 블레이드에서 **스케일 아웃 (App Service 요금제)** 옵션을 클릭합니다.
 2. **규칙 기반** 을 선택합니다.
 3. **구성**을 클릭합니다.
-    ![alt text](images/image-1.png)
+    ![alt text](./images/image-1.png)
 4. **구성**에서 **사용자 지정 자동 크기 조정**을 클릭합니다.
 5. **기본 값**에서 **크기 조정 모드**를 **메트릭 기준 크기 조정**을 선택합니다.
 6. 아래 이미지에 보이는 것과 비슷한 **규칙 추가**를 클릭합니다.
-    ![alt text](images/image-2.png)
+    ![alt text](./images/image-2.png)
 
 ### Task 4: 특정 조건에서 인스턴스가 늘어나는 규칙 추가
 
@@ -212,7 +212,7 @@
 3. 설정을 추가 합니다.
 4. 아래와 같이 설정되었는 지 확인합니다.
 
-    ![alt text](images/image-3.png)
+    ![alt text](./images/image-3.png)
 
 5. **저장**을 클릭합니다.
 

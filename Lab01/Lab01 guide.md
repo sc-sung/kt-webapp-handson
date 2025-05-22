@@ -30,7 +30,7 @@
    - 리소스 이름: `KT-AppServiceHandsOn`
    - 지역: `(Asia Pacific) Korea Central`
    
-   ![Image.png](Images/Image1.png)
+   ![Image.png](./images/Image1.png)
 4. **검토 + 만들기** 클릭 → **만들기** 클릭 후 리소스 그룹 생성 완료 대기
 5. 완료 후 **리소스 이동** 클릭하여 리소스 그룹 블레이드로 이동
 
@@ -47,7 +47,7 @@
     - **기본 서비스**: 변경 없음
     - **성능**: Standard 옵션 선택
     - **중복 저장**: 드롭다운 목록에서 **로컬 중복 저장 (LRS)** 선택
-![alt text](images/image2.png)
+![alt text](./images/image2.png)
 4. 설정을 확인한 후 **검토 + 만들기**를 클릭합니다.
 5. **만들기**를 클릭합니다.
 6. 완료 후 **리소스 이동** 클릭하여 리소스 그룹 블레이드로 이동
@@ -87,7 +87,7 @@
     - **지역**: **(Asia Pacific) Korea Central** 선택
     - **Windows 계획 ((Asia Pacific) Korea Central)**: **새로 만들기**를 선택한 후, 이름에 **KTAppServiceHandsOn** 입력하고 **확인** 클릭
     - **요금제**: **표준 S1** 선택
-    ![alt text](images/image3.png)
+    ![alt text](./images/image3.png)
 6. **모니터링 + 보안** 탭에서, **Application Insights 사용** 옵션을 **아니오**로 선택한 후 **검토 + 만들기**를 클릭합니다.
 7. **검토 + 만들기** 탭에서 선택한 옵션들을 검토하고 **만들기**을 클릭하여 웹앱을 생성합니다. (생성이 완료될 때까지 기다립니다.)
 8. 생성 완료 후, **개요** 블레이드에서 **리소스로 이동** 버튼을 클릭하여 새로 생성된 웹앱의 블레이드로 이동합니다.
@@ -266,7 +266,7 @@ az webapp deployment source config-zip --resource-group KT-AppServiceHandsOn --s
 2. 배포할 폴더로 `publish` 폴더를 지정합니다.
 3. 생성된 `publish` 폴더를 선택한 후, 배포 확인 메시지가 나타나면 **Deploy**를 클릭하고 진행 상황을 확인합니다.
 4. 배포가 완료되면 뜨는 메시지 팝업에서 **Browse Website**를 클릭해 웹사이트를 획인합니다.
-![alt text](images/image6.png) 
+![alt text](./images/image6.png) 
 
 ### Task 5: 결과 확인
 - 브라우저에서 웹앱 페이지가 로드되면, 페이지에서 `From VS Code` 텍스트를 확인합니다.
@@ -287,7 +287,7 @@ az webapp deployment source config-zip --resource-group KT-AppServiceHandsOn --s
 4. Explorer의 publish 폴더에서 오른쪽 클릭을 하고 **Deploy to Web App...** 을 선택합니다.
 
 5. 상단 팔레트에서 **imgweb[본인이름]** 웹앱을 클릭해 배포합니다.
-![alt text](images/image5.png)
+![alt text](./images/image5.png)
 
 6. 배포가 완료되면 웹사이트에 `Images - From VS Code 업데이트` 문구가 있는 지 확인합니다.
 
