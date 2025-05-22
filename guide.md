@@ -22,6 +22,7 @@ https://github.com/lunelake/kt-webapp-handson
 ### Azure CLI 설치
 https://learn.microsoft.com/ko-kr/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget
 
+```
 brew update
 brew install azure-cli
-
+```
