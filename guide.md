@@ -35,3 +35,9 @@ https://github.com/Azure/azure-functions-core-tools/releases
 brew tap azure/functions
 brew install azure-functions-core-tools@4
 ```
+
+
+### Docker Desktop 설치
+
+- https://www.docker.com/products/docker-desktop 에서 설치
+- 설치 후 Docker가 정상 실행 중인지 docker version 으로 확인
