@@ -182,11 +182,11 @@
 1. App Service Plan 블레이드에서 **스케일 아웃 (App Service 요금제)** 옵션을 클릭합니다.
 2. **규칙 기반** 을 선택합니다.
 3. **구성**을 클릭합니다.
-    ![alt text](./images/image-1.png)
+    ![alt text](./Images/image-1.png)
 4. **구성**에서 **사용자 지정 자동 크기 조정**을 클릭합니다.
 5. **기본 값**에서 **크기 조정 모드**를 **메트릭 기준 크기 조정**을 선택합니다.
 6. 아래 이미지에 보이는 것과 비슷한 **규칙 추가**를 클릭합니다.
-    ![alt text](./images/image-2.png)
+    ![alt text](./Images/image-2.png)
 
 ### Task 4: 특정 조건에서 인스턴스가 늘어나는 규칙 추가
 
@@ -212,7 +212,7 @@
 3. 설정을 추가 합니다.
 4. 아래와 같이 설정되었는 지 확인합니다.
 
-    ![alt text](./images/image-3.png)
+    ![alt text](./Images/image-3.png)
 
 5. **저장**을 클릭합니다.
 
