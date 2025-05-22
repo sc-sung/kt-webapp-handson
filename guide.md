@@ -1,6 +1,6 @@
 https://github.com/lunelake/kt-webapp-handson
 
-
+https://www.eliostruyf.com/running-net-azure-functions-macos-visual-studio-code/
 
 ## 선행 설치
 
