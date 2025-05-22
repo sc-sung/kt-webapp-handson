@@ -320,10 +320,10 @@ Azure 포털의 "리소스, 서비스, 문서 검색" 텍스트 상자를 사용
    )
    {
        _logger.LogInformation("C# HTTP trigger function processed a request.");
-       _logger.LogInformation($"{blobContent}")   
+       _logger.LogInformation($"{blobContent}");   
        var response = req.CreateResponse(HttpStatusCode.OK);
        response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
-       await response.WriteStringAsync(blobContent)   
+       await response.WriteStringAsync(blobContent);   
        return response;
    }
    ```
